@@ -42,7 +42,7 @@ public:
         if (tope != nullptr)
             return tope->getDato();
         else {
-            cout << "Pila vacía" << endl;
+            cout << "pila vacia" << endl;
             return -1;
         }
     }
@@ -82,8 +82,8 @@ int main() {
     cout << "Despues de pop: ";
     p.mostrar(); 
 
-    cout << "¿Esta vacia?: " << (p.isEmptyStack() ? "si" : "no") << endl;
-    cout << "¿Esta llena?: " << (p.isFullStack() ? "si" : "no") << endl;
+    cout << "Esta vacia?: " << (p.isEmptyStack() ? "si" : "no") << endl;
+    cout << "Esta llena?: " << (p.isFullStack() ? "si" : "no") << endl;
 
     return 0;
 }
