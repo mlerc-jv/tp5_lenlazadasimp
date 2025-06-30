@@ -81,7 +81,7 @@ int main() {
 	l.agregarInicio(18);
 	l.agregarFinal(5);
 	l.agregarFinal(34);
-    l.agregarFinal(12);
+	l.agregarFinal(12);
 	l.mostrar();
 	
 	cout << "Cantidad actual: " << l.getCantidad() << endl;
