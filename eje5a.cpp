@@ -51,14 +51,14 @@ public:
 };
 
 int main() {
-    Lista lista;
+    Lista l;
 
-    lista.agregarFinal(17);
-    lista.agregarFinal(8);
-    lista.agregarFinal(23);
-    lista.agregarFinal(5);
+    l.agregarFinal(17);
+    l.agregarFinal(8);
+    l.agregarFinal(23);
+    l.agregarFinal(5);
 
-    lista.mostrar();  
+    l.mostrar();  
 
     return 0;
 }
