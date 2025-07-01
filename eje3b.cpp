@@ -38,7 +38,7 @@ public:
 		cantidad++;
 	}
 	
-	Nodo* buscarporindice(int posicion) {
+	Nodo* buscarxindice(int posicion) {
 		if (posicion < 0 || posicion >= cantidad)
 			return nullptr;
 		Nodo* actual = inicio;
@@ -67,17 +67,17 @@ public:
 int main() {
 	Lista l;
 	
-	l.agregarFinal(10);
-	l.agregarFinal(20);
-	l.agregarFinal(30);
-	l.agregarFinal(40);
+    l.agregarFinal(55);
+	l.agregarFinal(88);
+	l.agregarFinal(12);
+	l.agregarFinal(37);
 	l.mostrar();
-	
-	Nodo* n = l.buscarporindice(2);
+
+	Nodo* n = l.buscarxindice(2);
 	if (n != nullptr)
-		cout << "Valor en posicion 2: " << n->getDato() << endl;
+		cout << "valor en posicion 2: " << n->getDato() << endl;
 	else
-		cout << "Posicion invalida" << endl;
-	
+		cout << "posicion invalida" << endl;
+
 	return 0;
 }
