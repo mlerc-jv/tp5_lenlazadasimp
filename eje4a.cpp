@@ -69,21 +69,21 @@ int main() {
     Pila p;
     p.initStack();
 
-    p.pushStack(10);
-    p.pushStack(20);
-    p.pushStack(30);
+    p.pushStack(71);
+    p.pushStack(42);
+    p.pushStack(19);
 
     cout << "Contenido de la pila: ";
     p.mostrar(); 
 
-    cout << "Tope: " << p.topStack() << endl;
+    cout << "cima: " << p.topStack() << endl;
 
     p.popStack();
-    cout << "Despues de pop: ";
+    cout << "despues de pop: ";
     p.mostrar(); 
 
-    cout << "Esta vacia?: " << (p.isEmptyStack() ? "si" : "no") << endl;
-    cout << "Esta llena?: " << (p.isFullStack() ? "si" : "no") << endl;
+    cout << "esta vacia?: " << (p.isEmptyStack() ? "si" : "no") << endl;
+    cout << "esta llena?: " << (p.isFullStack() ? "si" : "no") << endl;
 
     return 0;
 }
