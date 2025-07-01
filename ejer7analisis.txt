@@ -1,0 +1,57 @@
+Primer Fragmento: 
+void enigma(Nodo* nodo)
+{
+    if(nodo != nullptr)
+        if(nodo->getSiguiente() == nullptr)
+            cout << nodo->getDato() << endl;
+        else {
+            enigma(nodo->getSiguiente());
+            cout << nodo->getDato() << endl;
+        }
+}
+
+Considero que es una función recursiva, esta recorre una lista hasta llegar al ultimo nodo e imprime los valores en orden inverso, o sea, desde el final hasta el inicio
+
+Por ejemplo si  usamos la lista
+6 → 4 → 9 → 5 → 8 → null
+
+imprime por pantalla
+8
+5
+9
+4
+6
+
+Segundo Fragmento:
+int misterio(Nodo* nodo)
+{
+    if(nodo == nullptr)
+        return 0;
+    else
+        return misterio(nodo->getSiguiente()) + 1;
+}
+
+Funcion recursiva que cuenta los nodos, va hasta el final de la lista y vuelve sumando 1 en cada nivel
+
+Por ejemplo con la lista 
+6 → 4 → 9 → 5 → 8 → null
+
+por pantalla se imprime:
+5
+
+Tercer Fragmento:
+Nodo* desconocido(Nodo* nodo)
+{
+    if(nodo == nullptr || nodo->getSiguiente() == nullptr)
+        return nodo;
+    else
+        return desconocido(nodo->getSiguiente());
+}
+
+ Funcion recursiva que avanza hasta el ultimo nodo y retorna, o sea, devuelve un puntero al ultimo nodo que hay
+
+Por ejemplo con la lista:
+6 → 4 → 9 → 5 → 8 → null
+
+Por pantalla se imprime: 
+8
