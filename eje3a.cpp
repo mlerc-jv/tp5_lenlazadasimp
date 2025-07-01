@@ -66,15 +66,15 @@ public:
 
 int main() {
 	Lista l;
-	
-	l.agregarFinal(10);
-	l.agregarFinal(20);
-	l.agregarFinal(30);
-	l.agregarFinal(40);
-	l.mostrar();
-	
-	cout << "indice de 30: " << l.buscarindice(30) << endl;
-	cout << "indice de 99: " << l.buscarindice(99) << endl;
-	
-	return 0;
+
+l.agregarFinal(17);
+l.agregarFinal(23);
+l.agregarFinal(12);
+l.agregarFinal(99);
+l.mostrar();
+
+cout << "indice de numero 12: " << l.buscarindice(12) << endl;
+cout << "indice de numero 45: " << l.buscarindice(45) << endl;
+ return 0;
+
 }
