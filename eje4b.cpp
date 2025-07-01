@@ -81,7 +81,7 @@ public:
 
     void mostrar() {
         Nodo* actual = frente;
-        cout << "Cola";
+        cout << "Cola: ";
         while (actual != nullptr) {
             cout << actual->getDato() << " ";
             actual = actual->getSiguiente();
@@ -94,10 +94,9 @@ int main() {
     Cola c;
     c.initQueue();
 
-    c.pushQueue(50);
-    c.pushQueue(60);
-    c.pushQueue(70);
-
+    c.pushQueue(81);
+    c.pushQueue(92);
+    c.pushQueue(33);
     c.mostrar();
 
     cout << "Frente: " << c.topQueue() << endl;    
